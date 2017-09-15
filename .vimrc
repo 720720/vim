@@ -1,7 +1,3 @@
-" language
-
-language messages en
-
 " vimrc
 
 augroup vimrc
@@ -11,7 +7,7 @@ augroup END
 
 " mkdir
 
-if !isdirectory($HOME . /.vim/autoload')
+if !isdirectory($HOME . '/.vim/autoload')
   call mkdir($HOME . '/.vim/autoload', 'p')
 endif
 
