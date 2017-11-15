@@ -158,7 +158,7 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_css_checkers = ['csslint']
 let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_php_checkers = ['php', 'phpmd']
+let g:syntastic_php_checkers = ['php']
 
 " vdebug
 
