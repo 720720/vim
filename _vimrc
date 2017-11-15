@@ -53,6 +53,7 @@ Plug 'https://github.com/ludovicchabant/vim-gutentags'
 Plug 'https://github.com/majutsushi/tagbar'
 Plug 'https://github.com/mbbill/undotree'
 Plug 'https://github.com/scrooloose/nerdtree'
+Plug 'https://github.com/sheerun/vim-polyglot'
 Plug 'https://github.com/sirver/ultisnips'
 Plug 'https://github.com/tommcdo/vim-lion'
 Plug 'https://github.com/tpope/vim-commentary'
@@ -61,9 +62,6 @@ Plug 'https://github.com/tpope/vim-repeat'
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
-
-Plug 'https://github.com/shawncplus/phpcomplete.vim'
-Plug 'https://github.com/sheerun/vim-polyglot'
 
 call plug#end()
 
