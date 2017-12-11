@@ -689,3 +689,35 @@ mzgg=G`z
 gg=G``
 
 
+
+LIST
+
+https://www.reddit.com/r/vim/comments/4hoa6e/what_do_you_use_for_your_listchars/
+https://stackoverflow.com/questions/12534313/vim-set-list-as-a-toggle-in-vimrc
+https://github.com/teto/vim-listchars
+
+http://vimhelp.appspot.com/options.txt.html#%27list%27
+http://vimhelp.appspot.com/options.txt.html#%27listchars%27
+http://vimhelp.appspot.com/syntax.txt.html#hl-NonText
+http://vimhelp.appspot.com/syntax.txt.html#hl-SpecialKey
+
+
+eol:c
+tab:xy
+space:c
+trail:c
+extends:c
+precedes:c
+conceal:c
+nbsp:c
+
+
+set list
+set listchars=eol:↲,tab:▸\ ,space:.,trail:·,extends:→,precedes:←,conceal:_,nbsp:␣
+highlight NonText ctermfg=red guifg=red
+highlight SpecialKey ctermfg=red guifg=red
+
+
+nnoremap <F3> :set list!<CR>
+
+
