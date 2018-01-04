@@ -128,11 +128,11 @@ let g:ctrlp_show_hidden = 1
 
 " tagbar
 
-let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
+let g:tagbar_ctags_bin = 'ctags'
 
 " gutentags
 
-let g:gutentags_ctags_executable = '/usr/local/bin/ctags'
+let g:gutentags_ctags_executable = 'ctags'
 let g:gutentags_cache_dir = '~/.vim/tags'
 let g:gutentags_project_root = ['robots.txt']
 
