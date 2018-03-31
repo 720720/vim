@@ -139,10 +139,6 @@ let g:gutentags_project_root = ['robots.txt']
 
 let g:mucomplete#enable_auto_at_startup = 1
 
-inoremap <expr> <C-E> mucomplete#popup_exit('<C-E>')
-inoremap <expr> <C-Y> mucomplete#popup_exit('<C-Y>')
-inoremap <expr> <CR> mucomplete#popup_exit('<CR>')
-
 " syntastic
 
 let g:syntastic_always_populate_loc_list = 1
