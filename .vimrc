@@ -141,7 +141,10 @@ let g:gutentags_project_root = ['robots.txt']
 " mucomplete
 
 let g:mucomplete#enable_auto_at_startup = 1
-let g:mucomplete#chains = {'default' : ['path', 'ulti', 'omni', 'keyn', 'dict', 'uspl'], 'vim' : ['path', 'ulti', 'cmd', 'keyn']}
+
+let g:mucomplete#chains = {}
+let g:mucomplete#chains.default = ['path', 'ulti', 'omni', 'keyn', 'dict', 'uspl']
+let g:mucomplete#chains.vim = ['path', 'ulti', 'cmd', 'keyn']
 
 inoremap <silent> <expr> <CR> mucomplete#ultisnips#expand_snippet("\<CR>")
 
