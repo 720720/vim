@@ -145,23 +145,7 @@ let g:gutentags_project_root = ['robots.txt']
 let g:mucomplete#enable_auto_at_startup = 1
 let g:mucomplete#chains = {'default' : ['path', 'ulti', 'omni', 'keyn', 'dict', 'uspl'], 'vim' : ['path', 'ulti', 'cmd', 'keyn']}
 
-inoremap <expr> <C-E> mucomplete#popup_exit('<C-E>')
-inoremap <expr> <C-Y> mucomplete#popup_exit('<C-Y>')
-inoremap <expr> <CR> mucomplete#popup_exit('<CR>') . (pumvisible() && len(UltiSnips#SnippetsInCurrentScope()) ? '<C-R>=UltiSnips#ExpandSnippet()<CR>' : '')
-
-" syntax
-
-augroup drupal
-  autocmd!
-  autocmd BufRead,BufNewFile *.engine set filetype=php
-  autocmd BufRead,BufNewFile *.inc set filetype=php
-  autocmd BufRead,BufNewFile *.install set filetype=php
-  autocmd BufRead,BufNewFile *.module set filetype=php
-  autocmd BufRead,BufNewFile *.profile set filetype=php
-  autocmd BufRead,BufNewFile *.test set filetype=php
-  autocmd BufRead,BufNewFile *.theme set filetype=php
-  autocmd BufRead,BufNewFile *.view set filetype=php
-augroup END
+inoremap <silent> <expr> <CR> mucomplete#ultisnips#expand_snippet("\<CR>")
 
 " keyboard
 
